@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-main class="background">
+          <v-img
+            height="300"
+            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+          ></v-img>
+          <div class="pc">
+            <hea></hea>
+          </div>
+          <div class="mobile">
+            <a href="index.html"><v-btn plain>home</v-btn></a>
+            <a href="skill.html"><v-btn plain>skill</v-btn></a>
+            <a href="intern.html"><v-btn plain>intern</v-btn></a>
+            <a href="works.html"><v-btn plain>works</v-btn></a>
+          </div>
+          <v-container>
+            <h1 class="title-font">Taiki Osada's portfolio</h1>
+            <div class="mt-200 page-link-title text-center">
+              <div>scroll</div>
+              <v-icon class="text-center">mdi-arrow-down</v-icon>
+            </div>
+            <v-container>
+              <h1 class="session-title">PROFILE</h1>
+                  <p class="text-center session-text">
+                    ネットワークやセキュリティなどのコンピュータサイエンス<br />
+                    の基礎やプログラミングなど、IT関連のことを中心に学習しています。<br />
+                    研究室は機械学習やソフトウェアに関する分野を中心に研究する場所に入り、<br />
+                    来年度から本格的に研究をする予定です。また、学外活動としてエ<br />
+                    ンジニアの長期インターンを行っています。
+                  </p>
+            </v-container>
+              </v-col>
+            <!-- Skill概要 -->
+            <h1 class="session-title">SKILL</h1>
+            <div class="mt-50 session-text">
+              <v-row class="mt-1">
+                <v-col cols="6">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      Linux
+                    </v-chip>
+                  </div>
+                </v-col>
+                <v-col cols="6">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      C
+                    </v-chip>
+                  </div>
+                </v-col>
+              </v-row>
+              <div class="text-center">
+                <v-chip class="text-center">
+                  MYSQL
+                </v-chip>
+              </div>
+              <v-row class="mt-1">
+                <v-col cols="6">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      PHP
+                    </v-chip>
+                  </div>
+                </v-col>
+                <v-col cols="6">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      javascript
+                    </v-chip>
+                  </div>
+                </v-col>
+              </v-row>
+              <div class="text-center">
+                <v-chip class="text-center">
+                  HTML
+                </v-chip>
+              </div>
+              <v-row class="mt-1">
+                <v-col cols="4">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      CSS
+                    </v-chip>
+                  </div>
+                </v-col>
+                <v-col cols="4">
+                </v-col>
+                <v-col cols="4">
+                  <div class="text-center">
+                    <v-chip class="text-center">
+                      python
+                    </v-chip>
+                  </div>
+                </v-col>
+              </v-row>
+              <div class="text-center mt-1">
+                <v-chip class="text-center">
+                  C#
+                </v-chip>
+              </div>
+              <div class="text-center mt-5">
+                <v-btn plain>
+                  <a href="skill.html">詳しく見る</a>
+                </v-btn>
+              </div>
+            </div>
+            <!-- Intern概要 -->
+            <h1 class="session-title">INTERN</h1>
+            <v-row class="session-text">
+              <v-col cols="6">
+                <div class="text-center mt-10">
+                  <p >
+                    IT企業でエンジニアの長期インターンを<br />
+                    してします。インターンでは主にjavascript<br />
+                    やC#などの言語を使用しています。<br />
+                  </p>
+                  <v-btn plain>
+                    <a href="intern.html">詳しく見る</a>
+                  </v-btn>
+                </div>
+              </v-col>
+              <v-col cols="6">
+                <v-img
+                  height="300"
+                  src="images/Skill-image.png"
+                ></v-img>
+              </v-col>
+            </v-row>
+            <!-- Works概要 -->
+            <h1 class="session-title">WORKS</h1>
+            <v-row class="mb-10 session-text">
+              <v-col cols="6">
+                <v-img
+                  height="300"
+                  src="images/nuxt-image.png"
+                ></v-img>
+              </v-col>
+              <v-col cols="6" >
+                <v-container>
+                  <div class="text-center">
+                    <p>nuxt.jsで作ったアプリケーションです。<br />
+                      読書感想文作成アプリやニュースアプリを<br />
+                      作成しました。
+                    </p>
+                    <v-btn plain>
+                      <a href="works.html">詳しく見る</a>
+                    </v-btn>
+                  </div>
+                </v-container>
+              </v-col>
+            </v-row>
+          </v-container>
+          <foo></foo>
+        </v-main>
+      </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./app.js"></script>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".title-font", { delay: 1000 });
+      ScrollReveal().reveal(".page-link-title", { delay: 2000 });
+      ScrollReveal().reveal(".session-title", { delay: 200 });
+      ScrollReveal().reveal(".session-text", { delay: 500 });
+    </script>
+  </body>
+</html>

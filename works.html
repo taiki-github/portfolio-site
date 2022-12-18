@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-main class="background">
+          <div class="pc">
+            <hea></hea>
+          </div>
+          <div class="mobile">
+            <a href="index.html"><v-btn plain>home</v-btn></a>
+            <a href="skill.html"><v-btn plain>skill</v-btn></a>
+            <a href="intern.html"><v-btn plain>intern</v-btn></a>
+            <a href="works.html"><v-btn plain>works</v-btn></a>
+          </div>
+          <h1>WORKS</h1>
+          <h5 class="card-title text-center mt-10">R&W</h5>
+          <v-card class="mx-auto" max-width="1000">
+            <v-img class="white--text align-end" src="images/R&W-image.png">
+            </v-img>
+            <div>GitHub:<a href="https://github.com/taiki-github/book-app">https://github.com/taiki-github/book-app</a></div>
+            <div>URL:<a href="https://nuxt-spa-book-app-ee9ea.web.app">https://nuxt-spa-book-app-ee9ea.web.app</a></div>
+            <v-card-text>
+              読書感想文作成アプリです。<br>
+              例文の提案などをして、読書感想文の作成をサポートします。<br>
+              また、作成した読書感想文を投稿することもできます。<br>
+              以下のメールアドレスとパスワードでログインできます。<br>
+            </v-card-text>
+            メールアドレス:test@test.com<br>
+            パスワード:password<br>
+          </v-card>
+          <h5 class="card-title text-center mt-10">News Log</h5>
+          <v-card class="mx-auto mb-10 mx-md-2" max-width="1000">
+            <v-img class="white--text align-end" src="images/newsLogImage1.png">
+            </v-img>
+            <div>GitHub:<a href="https://github.com/taiki-github/book-app">https://github.com/taiki-github/book-app</a></div>
+            <div>URL:</div>
+            <v-card-text>
+              ニュースSNSアプリです。<br>
+              ニュースの検索や、天気予報の閲覧などの機能があります。<br>
+              また、閲覧したニュースをメモしておくこともできます。<br>
+              ※開発用APIを使用しているのでデプロイしていません。申し訳ありませんが閲覧する場合、git hubでcloneしてnpm run dev でローカルサーバを立ち上げ、閲覧してください<br>
+              以下のメールアドレスとパスワードでログインできます。<br>
+            </v-card-text>
+            メールアドレス:test@test.com<br>
+            パスワード:password<br>
+          </v-card>
+          <foo></foo>
+        </v-main>
+      </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+     
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src='./app.js'></script>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".title-font", { delay: 200 });
+      ScrollReveal().reveal(".page-link-title", { delay: 1000 });
+      ScrollReveal().reveal(".session-title", { delay: 200 });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-main class="background">
+          <div class="pc">
+            <hea></hea>
+          </div>
+          <div class="mobile">
+            <a href="index.html"><v-btn plain>home</v-btn></a>
+            <a href="skill.html"><v-btn plain>skill</v-btn></a>
+            <a href="intern.html"><v-btn plain>intern</v-btn></a>
+            <a href="works.html"><v-btn plain>works</v-btn></a>
+          </div>
+          <v-container>
+            <h1>INTERN</h1>
+            <h4 class="card-title text-center mt-150">ドキュメント作成アプリ</h4>
+            <p class="text-center">
+              マニュアルなどを作成する企業向けのwebアプリケーションです。<br>
+              バックエンドがjava、フロントエンドがjQueryで書かれていて、<br>
+              主にフロント部分を担当していました。<br>
+            </p>
+            <h4 class="card-title text-center mt-150">ブラウザ自動操作ツール</h4>
+            <p class="text-center">webアプリケーションのテストを自動化するツールです。<br>
+              C#でseleniumを使い、実装しました。
+            </p>
+            <h4 class="card-title text-center mt-150">健康レポート作成システム</h4>
+            <p class="text-center">企業の健康診断のデータを受領してレポートを作成するシステムです。<br>
+              C#を使い開発しています。</p>
+          </v-container>
+        </v-main>
+        <foo></foo>
+      </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        vuetify: new Vuetify(),
+        data: () => ({
+          profile: false,
+          tabs: null,
+          items: ["PROFILE", "SKILL", "INTERN", "WORK"],
+          links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
+          texts: [],
+        }),
+        methods: {
+          pageChange() {
+            this.profile = true;
+            console.log("aaa");
+          },
+        },
+      });
+    </script>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".title-font", { delay: 200 });
+      ScrollReveal().reveal(".page-link-title", { delay: 1000 });
+      ScrollReveal().reveal(".session-title", { delay: 200 });
+    </script>
+   
+  </body>
+</html>

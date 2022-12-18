@@ -1,0 +1,45 @@
+
+
+  h1{
+    text-align:center;
+    font:300 40px 'open sans',sans-serif;
+    color:#666;
+    text-transform:uppercase;
+  }
+
+ .background{
+  background-color: rgb(249, 249, 241);
+ }
+
+ .title-font{
+  font-family: fantasy;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 200px;
+ }
+
+ .session-title{
+  margin-top: 600px;
+ }
+
+ .mt-150{
+  margin-top: 150px;
+ }
+ .mt-50{
+  margin-top: 50px;
+ }
+ .mt-200{
+  margin-top: 200px;
+ }
+ @media screen and (min-width: 481px) {
+  .mobile{
+   display: none;
+  }
+  
+  }
+  
+  @media screen and (max-width: 481px) {
+    .pc{
+     display: none;
+    }
+    }
